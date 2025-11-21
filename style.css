@@ -730,15 +730,40 @@ section {
 
 /* Responsive */
 @media (max-width: 968px) {
+    .hero {
+        padding: 120px 0 60px;
+        /* Explicit padding: Top, Left/Right, Bottom */
+        min-height: auto;
+        display: block;
+        /* Disable flex centering on mobile */
+        height: auto;
+    }
+
     .hero-content {
+        display: flex;
         flex-direction: column-reverse;
         text-align: center;
+        gap: 2rem;
+        width: 100%;
     }
 
     .hero-text {
         align-items: center;
         display: flex;
         flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .cyber-frame {
+        width: 250px;
+        /* Smaller image on mobile */
+        height: 250px;
     }
 
     .greeting {
@@ -758,6 +783,19 @@ section {
 
     .contact-wrapper {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .cyber-btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
     }
 }
 
@@ -768,12 +806,26 @@ section {
         left: -100%;
         width: 100%;
         height: calc(100vh - 80px);
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.95);
+        /* Slightly transparent */
+        backdrop-filter: blur(10px);
         flex-direction: column;
         align-items: center;
         justify-content: center;
         transition: 0.4s ease;
         border-top: 1px solid var(--neon-cyan);
+        z-index: 999;
+        padding: 0 !important;
+        /* Force remove padding */
+        margin: 0 !important;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        margin: 1.5rem 0;
+        /* Add vertical spacing */
+        padding: 0;
     }
 
     .nav-links.active {
@@ -782,6 +834,8 @@ section {
 
     .hamburger {
         display: block;
+        z-index: 1001;
+        /* Ensure above menu */
     }
 
     .hamburger.active .bar:nth-child(2) {
@@ -799,7 +853,13 @@ section {
     }
 
     .hero h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        /* Smaller font for mobile */
+        word-break: break-word;
+    }
+
+    .section-title {
+        font-size: 2rem;
     }
 }
 
