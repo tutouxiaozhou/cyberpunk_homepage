@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEURAL_LOGS // ACCESSING...</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Article Specific Styles */
+        .article-container {
+            padding-top: 160px;
+            min-height: 100vh;
+            max-width: 800px;
+            margin: 0 auto;
+            padding-bottom: 100px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--neon-cyan);
+            font-family: var(--font-mono);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .back-link:hover {
+            color: var(--neon-yellow);
+            text-shadow: 0 0 5px var(--neon-yellow);
+        }
+
+        .article-header {
+            margin-bottom: 3rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 2rem;
+        }
+
+        .article-meta-detail {
+            font-family: var(--font-mono);
+            color: var(--neon-pink);
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .article-title {
+            font-family: var(--font-header);
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+
+        .article-tags {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .article-content {
+            font-size: 1.2rem;
+            color: var(--text-main);
+            line-height: 1.8;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .article-content h2 {
+            font-family: var(--font-header);
+            color: var(--neon-yellow);
+            margin: 2.5rem 0 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .article-content blockquote {
+            border-left: 4px solid var(--neon-cyan);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-dim);
+            background: rgba(0, 240, 255, 0.05);
+            padding: 1.5rem;
+        }
+
+        .loading-text {
+            text-align: center;
+            font-family: var(--font-mono);
+            color: var(--neon-cyan);
+            font-size: 1.5rem;
+            margin-top: 100px;
+            animation: blink 1s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div class="noise"></div>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">JINGTIAN.ZHOU_</a>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html#home">SYSTEM</a></li>
+                    <li><a href="index.html#about">DATA</a></li>
+                    <li><a href="index.html#portfolio" class="active">NEURAL_LOGS</a></li>
+                    <li><a href="index.html#contact">LINK</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="article-container">
+        <a href="index.html#portfolio" class="back-link"><i class="fas fa-chevron-left"></i> RETURN_TO_NEURAL_LOGS</a>
+
+        <div id="article-display">
+            <div class="loading-text">DECRYPTING_DATA_PACKET...</div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2077 Jingtian Zhou. SYSTEM_SECURE.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

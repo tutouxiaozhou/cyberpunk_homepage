@@ -22,7 +22,7 @@
                 <ul class="nav-links">
                     <li><a href="#home" data-text="SYSTEM">SYSTEM</a></li>
                     <li><a href="#about" data-text="DATA">DATA</a></li>
-                    <li><a href="#portfolio" data-text="PROJECTS">PROJECTS</a></li>
+                    <li><a href="#portfolio" data-text="LOGS">LOGS</a></li>
                     <li><a href="#contact" data-text="LINK">LINK</a></li>
                 </ul>
                 <div class="hamburger">
@@ -43,7 +43,7 @@
                     <p class="subtitle">NETRUNNER // Front-END DEVELOPER</p>
                     <p class="description">Constructing digital realities. Transforming chaotic data into elegant code structures.</p>
                     <div class="cta-buttons">
-                        <a href="#portfolio" class="cyber-btn primary">INITIALIZE_PROJECTS</a>
+                        <a href="#portfolio" class="cyber-btn primary">INITIALIZE_LOGS</a>
                         <a href="#contact" class="cyber-btn secondary">ESTABLISH_UPLINK</a>
                     </div>
                 </div>
@@ -106,54 +106,60 @@
 
         <section id="portfolio" class="portfolio">
             <div class="container">
-                <h2 class="section-title" data-text="ARCHIVES">ARCHIVES</h2>
+                <h2 class="section-title" data-text="NEURAL_LOGS">NEURAL_LOGS</h2>
                 <div class="projects-grid">
+                    <!-- Article 1 -->
                     <article class="cyber-card project-card">
                         <div class="project-image">
-                            <div class="placeholder-img" style="background: linear-gradient(135deg, #000428 0%, #004e92 100%);"></div>
-                            <div class="overlay">ACCESSING...</div>
+                            <div class="placeholder-img" style="background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);"></div>
+                            <div class="overlay">READ_DATA...</div>
                         </div>
                         <div class="project-info">
-                            <h3>E-COMMERCE_DASH</h3>
-                            <p>Real-time data visualization platform for retail metrics.</p>
+                            <div class="article-meta">2077-11-21 // TECH</div>
+                            <h3>THE_GHOST_IN_THE_MACHINE</h3>
+                            <p>Exploring the boundaries of artificial consciousness and the ethics of digital immortality.</p>
                             <div class="tags">
-                                <span>REACT</span>
-                                <span>D3.JS</span>
-                                <span>NODE</span>
+                                <span>AI</span>
+                                <span>PHILOSOPHY</span>
                             </div>
-                            <a href="#" class="project-link">EXECUTE <i class="fas fa-chevron-right"></i></a>
+                            <a href="article.html?id=1" class="project-link">ACCESS_FILE <i class="fas fa-chevron-right"></i></a>
                         </div>
                     </article>
+
+                    <!-- Article 2 -->
                     <article class="cyber-card project-card">
                         <div class="project-image">
-                            <div class="placeholder-img" style="background: linear-gradient(135deg, #2b1055 0%, #7597de 100%);"></div>
-                            <div class="overlay">ACCESSING...</div>
+                            <div class="placeholder-img" style="background: linear-gradient(135deg, #000000 0%, #434343 100%);"></div>
+                            <div class="overlay">READ_DATA...</div>
                         </div>
                         <div class="project-info">
-                            <h3>TASK_COLLAB_V3</h3>
-                            <p>High-efficiency team synchronization tool.</p>
+                            <div class="article-meta">2077-10-15 // DEV</div>
+                            <h3>OPTIMIZING_NEURAL_LINKS</h3>
+                            <p>A deep dive into reducing latency in direct brain-computer interfaces using Rust.</p>
                             <div class="tags">
-                                <span>VUE 3</span>
-                                <span>FIREBASE</span>
-                                <span>TAILWIND</span>
+                                <span>RUST</span>
+                                <span>BCI</span>
+                                <span>PERFORMANCE</span>
                             </div>
-                            <a href="#" class="project-link">EXECUTE <i class="fas fa-chevron-right"></i></a>
+                            <a href="article.html?id=2" class="project-link">ACCESS_FILE <i class="fas fa-chevron-right"></i></a>
                         </div>
                     </article>
+
+                    <!-- Article 3 -->
                     <article class="cyber-card project-card">
                         <div class="project-image">
-                            <div class="placeholder-img" style="background: linear-gradient(120deg, #0f2027 0%, #203a43 50%, #2c5364 100%);"></div>
-                            <div class="overlay">ACCESSING...</div>
+                            <div class="placeholder-img" style="background: linear-gradient(135deg, #1a2a6c 0%, #b21f1f 50%, #fdbb2d 100%);"></div>
+                            <div class="overlay">READ_DATA...</div>
                         </div>
                         <div class="project-info">
-                            <h3>GLOBAL_WEATHER_NET</h3>
-                            <p>Geospatial atmospheric monitoring system.</p>
+                            <div class="article-meta">2077-09-01 // SECURITY</div>
+                            <h3>ICE_BREAKER_PROTOCOLS</h3>
+                            <p>Modern techniques for penetration testing in high-security corporate networks.</p>
                             <div class="tags">
-                                <span>JS</span>
-                                <span>API</span>
-                                <span>CSS3</span>
+                                <span>CYBERSEC</span>
+                                <span>NETWORKING</span>
                             </div>
-                            <a href="#" class="project-link">EXECUTE <i class="fas fa-chevron-right"></i></a>
+                            <a href="article.html?id=3" class="project-link">ACCESS_FILE <i class="fas fa-chevron-right"></i></a>
                         </div>
                     </article>
                 </div>
@@ -193,15 +199,15 @@
                             <a href="#"><i class="fab fa-dribbble"></i></a> -->
                         </div>
                     </div>
-                    <form class="contact-form">
+                    <form class="contact-form" action="https://formspree.io/f/myzorgwz" method="POST">
                         <div class="form-group">
-                            <input type="text" placeholder="IDENTITY" required>
+                            <input type="text" name="identity" placeholder="IDENTITY" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="RETURN_ADDRESS" required>
+                            <input type="email" name="email" placeholder="RETURN_ADDRESS" required>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="DATA_PACKET" rows="5" required></textarea>
+                            <textarea name="message" placeholder="DATA_PACKET" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="cyber-btn primary">SEND_TRANSMISSION</button>
                     </form>
@@ -209,6 +215,15 @@
             </div>
         </section>
     </main>
+
+    <div id="transmission-modal" class="modal">
+        <div class="modal-content cyber-card">
+            <span class="close-modal">&times;</span>
+            <h3 class="glitch" data-text="TRANSMISSION_SUCCESS">TRANSMISSION_SUCCESS</h3>
+            <p>DATA_PACKET_UPLOADED_TO_SERVER</p>
+            <div class="modal-decoration"></div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">
